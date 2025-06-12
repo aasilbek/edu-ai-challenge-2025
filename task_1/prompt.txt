@@ -1,0 +1,22 @@
+You are a senior software architect with deep expertise in designing scalable, high-performance systems. I need your help selecting the most suitable type of database for a new project. Please approach this task using **Chain-of-Thought (CoT) reasoning**, breaking down the problem step-by-step and justifying each decision clearly.
+
+Here are the project requirements:
+- The application is a social platform expected to have millions of users.
+- It must store user profiles, posts, and social connections (such as followers or friends).
+- The database must support **high read performance**, as the workload consists of approximately **80% read operations and 20% write operations**.
+- **Scalability** is crucial, since the user base will grow significantly over time.
+- Relationships between users (e.g. mutual connections, suggested friends) will be queried often.
+
+Your task:
+1. Analyze each requirement **individually**, explaining its implications for database design and performance.
+2. Compare and contrast different database types (e.g., relational, NoSQL, graph databases, or combinations).
+3. Weigh the trade-offs (e.g., performance, complexity, flexibility, scalability) for each option.
+4. Arrive at a well-reasoned, **step-by-step conclusion** that shows how the final database recommendation best meets all the requirements.
+5. If a combination of databases is more appropriate, explain how they would interact.
+
+Important: Be transparent in your reasoning and avoid skipping steps. This is not about getting the fastest answer, but about **demonstrating logical, human-like decision making** through clear CoT reasoning.
+
+Format your output in a structured way:
+→ Step-by-step analysis  
+→ Trade-offs  
+→ Final recommendation with justification

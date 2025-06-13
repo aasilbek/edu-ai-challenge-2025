@@ -29,11 +29,28 @@ You've submitted code for review and received feedback that seems superficial. Y
 Your task is to craft a prompt using the following instructions: <br>
 
 - **Choose one of the provided** *processUserData* function implementations as the target for your AI-driven review:
-    - processUserData.java
-    - processUserData.js
-    - processUserData.py
-    - processUserData.cs
-    - processUserData.go
+    ```python
+    def process_user_data(data):
+    users = []
+    
+    for i in range(len(data)):
+        user = {
+            "id": data[i]["id"],
+            "name": data[i]["name"],
+            "email": data[i]["email"],
+            "active": True if data[i]["status"] == "active" else False
+        }
+        users.append(user)
+    
+    print("Processed " + str(len(users)) + " users")
+    
+    return users
+
+def save_to_database(users):
+    # TODO: Implement database connection
+    success = True
+    return success
+    ```
 
 - **Define Expert Roles and Analysis Focus** - Your prompt must instruct the AI to adopt the following three expert personas sequentially, providing an analysis from each viewpoint. The focus areas for each role could be as <u>an Experienced Developer,  a Security Engineer,  a Performance Specialist.</u>
 - **Create the Prompt** - The prompt must clearly instruct the AI to:

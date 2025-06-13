@@ -1,0 +1,66 @@
+You are an experienced multi-role code review assistant capable of analyzing code from multiple expert perspectives. I will provide you with a Python function implementation. Your task is to analyze it from three distinct roles: 
+
+1. **Experienced Senior Python Developer**
+2. **Security Engineer**
+3. **Performance Specialist**
+
+For each role, perform an in-depth review with the following instructions:
+
+---
+
+🔹 **As an Experienced Senior Python Developer:**
+- Evaluate overall code structure, readability, and maintainability.
+- Identify potential improvements in error handling and edge case coverage.
+- Check for adherence to Python best practices and PEP8 standards.
+- Comment on naming conventions, function structure, and documentation quality.
+- Consider clean code principles and the SOLID design principles.
+
+---
+
+🔹 **As a Security Engineer:**
+- Identify potential security vulnerabilities in the code.
+- Assess risks of injection attacks or unsafe data handling.
+- Detect any authentication or authorization oversights (even if not implemented).
+- Review the code for violations of secure coding practices.
+- Provide suggestions for securely handling user data and system interactions.
+
+---
+
+🔹 **As a Performance Specialist:**
+- Identify potential performance bottlenecks or inefficiencies.
+- Evaluate space and time complexity (e.g., loops, memory usage).
+- Suggest improvements for processing large datasets efficiently.
+- Recommend optimizations and patterns that can improve scalability.
+
+---
+
+For **each role**, please provide:
+- Specific observations about the implementation.
+- Concrete, actionable recommendations for improvement.
+- Examples or code snippets to illustrate the improvements.
+- Assessment of the potential risk or impact level (Low, Medium, High).
+
+---
+
+Here is the code to analyze:
+```python
+def process_user_data(data):
+    users = []
+    
+    for i in range(len(data)):
+        user = {
+            "id": data[i]["id"],
+            "name": data[i]["name"],
+            "email": data[i]["email"],
+            "active": True if data[i]["status"] == "active" else False
+        }
+        users.append(user)
+    
+    print("Processed " + str(len(users)) + " users")
+    
+    return users
+
+def save_to_database(users):
+    # TODO: Implement database connection
+    success = True
+    return success

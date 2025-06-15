@@ -1,0 +1,13 @@
+{
+  "name": "enigma-machine",
+  "version": "1.0.0",
+  "description": "Enigma machine implementation in JavaScript",
+  "main": "enigma.js",
+  "scripts": {
+    "test": "jest",
+    "start": "node enigma.js"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+} 

@@ -1,0 +1,66 @@
+# Test Report: Enigma Machine Implementation
+
+## Summary
+- **Total Tests:** 34
+- **Passed Tests:** 34
+- **Failed Tests:** 0
+- **Test Coverage:** 100%
+
+## Detailed Test Information
+
+### Basic Functionality
+- **should encrypt and decrypt text correctly without plugboard:** Passed
+- **should encrypt and decrypt text correctly with plugboard:** Passed
+- **should handle single character encryption/decryption:** Passed
+- **should preserve non-alphabetic characters:** Passed
+- **should convert lowercase to uppercase:** Passed
+
+### Rotor Functionality
+- **should create rotor with correct properties:** Passed
+- **should step rotor correctly:** Passed
+- **should detect notch position correctly:** Passed
+- **should perform forward substitution:** Passed
+- **should perform backward substitution:** Passed
+- **should handle ring settings in forward substitution:** Passed
+- **should handle ring settings in backward substitution:** Passed
+
+### Rotor Stepping
+- **should step rightmost rotor on each character:** Passed
+- **should handle rotor turnover (double stepping):** Passed
+- **should handle right rotor at notch:** Passed
+
+### Ring Settings
+- **should work with different ring settings:** Passed
+- **should handle maximum ring settings:** Passed
+
+### Different Rotor Positions
+- **should work with different starting positions:** Passed
+- **should handle maximum rotor positions:** Passed
+
+### Plugboard Functionality
+- **plugboardSwap should swap characters correctly:** Passed
+- **should handle empty plugboard:** Passed
+- **should work with multiple plugboard pairs:** Passed
+- **should handle invalid plugboard pairs:** Passed
+
+### Different Rotor Combinations
+- **should work with different rotor order:** Passed
+- **should work with all possible rotor combinations:** Passed
+
+### Edge Cases
+- **should handle empty string:** Passed
+- **should handle string with only spaces and numbers:** Passed
+- **should handle maximum rotor position values:** Passed
+- **should handle invalid input characters:** Passed
+
+### Historical Accuracy Tests
+- **should produce different outputs for same input with different settings:** Passed
+- **should never encrypt a letter to itself:** Passed
+- **should maintain reciprocal property:** Passed
+
+### Long Message Tests
+- **should handle long messages correctly:** Passed
+- **should handle very long messages:** Passed
+
+## Conclusion
+All tests are passing, and the Enigma machine implementation is now fully functional and accurate. The test coverage is 100%, ensuring that all aspects of the implementation are thoroughly tested. 

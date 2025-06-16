@@ -1,0 +1,13 @@
+{
+  "name": "sea-battle",
+  "version": "1.0.0",
+  "description": "Sea Battle game implementation",
+  "main": "seabattle.js",
+  "scripts": {
+    "test": "jest",
+    "test:coverage": "jest --coverage"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+} 
